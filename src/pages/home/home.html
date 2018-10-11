@@ -1,14 +1,14 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar  class="toolbar-background">
     <ion-title>
-      Ionic Blank
+      SERIES
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="wapper-serie">
+  <ion-item *ngFor="let item of messages">
+    <ion-icon name="ios-flame"></ion-icon>
+    {{item.serie}}
+  </ion-item>
 </ion-content>
